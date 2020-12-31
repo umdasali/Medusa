@@ -1,13 +1,162 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+body{
+  background: #171717;
+  font-family: 'Roboto', sans-serif;
+}
+.landing-card{
+  display: block;
+  position: relative;
+  width: 90%;
+  margin:0 auto;
+  margin-top:40px ;
+  margin-bottom: 10px;
+  color: white;
+  background: #171717;
+  box-shadow:  5px 5px 20px #0b0b0b;
+               
+  border-radius: 25px;
+}
+nav{
+  display: block;
+}
+nav>ul{
+  float: right;
+}
+nav>ul>li{
+  list-style-type: none;
+  float: left;
+  padding: 10px;
+}
+nav>ul>li>a{
+  color: #fff;
+  text-decoration: none;
+}
+nav>ul>li>a:hover{
+  color:#fff;
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+  transition: 0.4s ease-out;
+}
+.text-box{
+  padding-top: 70px;
+  margin: 0 auto;
+  margin: 40px;
+}
+.slider-box{
+  
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+.box-white{
+  background-color: #fff;
+  color: #000;
+  border-bottom-left-radius: 25px;
+  font-weight: 800;
+}
+.slider-text{
+  margin-top:70px;
+}
+.about-box{
+  margin: 25px;
+  padding: 20px;
+  color: white;
+}
+.btn-white{
+  background-color: none;
+  border-radius: 20px;
+  border: none;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: .4s linear ease;
+}
+.btn-white:hover{
+  background-color: #fff;
+  border-radius: 20px;
+  color: #000000;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 3px 3px 20px #000;
+}
+.img-about{
+  width: 300px;
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.sidenav a{
+  display: none;
+}
+.hamburger{
+  display: none;
+}
+@media only screen and (max-width: 469px){
+  nav{
+    display: none;
+  }
+  .sidenav {
+    
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #171717;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: 3px 3px 20px #000;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #b6b6b6;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+  .hamburger {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ffffff;
+    margin-top:-15px ;
+    position: fixed;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 15px;
+    z-index: 50;
+    box-shadow:   7px 7px 14px #0d0d0d,
+              -7px -7px 14px #212121
+  }
+  
 }
